@@ -1,4 +1,3 @@
-// useRandomNumbers.js
 import { useEffect, useState, useCallback } from "react";
 import { generateRandomNumbers } from "../utils/generateNumbers";
 
