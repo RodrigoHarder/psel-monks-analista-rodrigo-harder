@@ -6,6 +6,7 @@ export function useFormSubmit(number1, number2) {
     register,
     handleSubmit,
     setError,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -26,6 +27,7 @@ export function useFormSubmit(number1, number2) {
     try {
       await saveUser(dadosParaSalvar);
       alert("Usuário salvo com sucesso!");
+      reset();
     } catch (error) {
       console.error(error);
       alert("Erro ao salvar usuário.");
