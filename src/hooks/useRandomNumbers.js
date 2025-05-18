@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+// useRandomNumbers.js
+import { useEffect, useState, useCallback } from "react";
 import { generateRandomNumbers } from "../utils/generateNumbers";
 
 export function useRandomNumbers() {
@@ -6,12 +7,16 @@ export function useRandomNumbers() {
   const [number2, setNumber2] = useState(null);
   const [isReady, setIsReady] = useState(false);
 
-  useEffect(() => {
+  const generateNumbers = useCallback(() => {
     const { n1, n2 } = generateRandomNumbers();
     setNumber1(n1);
     setNumber2(n2);
     setIsReady(true);
   }, []);
 
-  return { number1, number2, isReady };
+  useEffect(() => {
+    generateNumbers();
+  }, [generateNumbers]);
+
+  return { number1, number2, isReady, generateNumbers };
 }
