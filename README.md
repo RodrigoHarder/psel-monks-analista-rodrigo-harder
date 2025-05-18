@@ -8,7 +8,7 @@ O protótipo das telas está disponível no [Figma](https://www.figma.com/design
 
 ## Demonstração
 
-![Gif apresentando o mockup](https://i.imgur.com/0vOmPoz.gif)
+![Gif apresentando o mockup](./assets/gif-mockup.gif)
 
 ## Aplicação do mockup
 
@@ -16,7 +16,7 @@ Para aplicar o projeto, basta fazer alterações no documento `db.json`, alterar
 
 Um exemplo pode ser um página sobre um pet shop, que pode ser acessado [neste repositório](https://github.com/RodrigoHarder/psel-monks-analista-rodrigo-harder/tree/example_petshop). A demonstração segue abaixo:
 
-![Gif apresentando um exemplo de aplicação para um pet shop](https://i.imgur.com/PWi3XSf.gif)
+![Gif apresentando um exemplo de aplicação para um pet shop](./assets/gif-petshop.gif)
 
 ## Instruções para execução
 
