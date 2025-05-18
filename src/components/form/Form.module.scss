@@ -1,0 +1,72 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  padding: $space-xxl 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width:$breakpoint-l) {
+    flex-direction: column;
+    gap: $space-xl;
+  }
+
+  >img {
+
+    @media (max-width:$breakpoint-l) {
+      width: 50%;
+      align-self: center;
+    }
+
+    @media (max-width:$breakpoint-s) {
+      width: 80%;
+      align-self: center;
+    }
+  }
+}
+
+.formContainer {
+  background-color: $light-secondary;
+  border-radius: $radius-l;
+  width: 851px;
+  height: 100%;
+  padding: $space-m;
+  display: flex;
+  flex-direction: column;
+  gap: $space-l;
+
+  @media (max-width:$breakpoint-l) {
+    width: 100%;
+  }
+
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+    gap: $space-s;
+  }
+}
+
+.fieldsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-s;
+  margin-bottom: $space-m;
+
+  @media (max-width:$breakpoint-m){
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonSend {
+  background-color: $medium-principal;
+  padding: $space-s $space-xl;
+  font-size: $size-xs;
+  font-weight: $bold;
+  border-radius: $radius-s;
+}

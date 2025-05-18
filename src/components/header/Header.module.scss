@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.pattern {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.container {
+  margin-top: $space-m;
+}
+
+.text {
+  margin: $space-xxl 0 $space-xl 0;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+
+  @media (max-width:$breakpoint-s) {
+    margin: $space-l 0 $space-m 0;
+    gap: $space-l;
+  }
+
+  >h1,
+  >h3 {
+    color: $light-secondary;
+  }
+
+  >h3 {
+    margin-bottom: $space-xl;
+  }
+}

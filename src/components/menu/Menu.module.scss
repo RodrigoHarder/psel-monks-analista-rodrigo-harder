@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: $space-xl;
+
+  @media (max-width: $breakpoint-m) {
+    gap: $space-m;
+    align-items: center;
+
+    img {
+      width: 150px;
+
+      @media (max-width:$breakpoint-s) {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.lista {
+  display: flex;
+  gap: $space-xl;
+
+  @media (max-width: $breakpoint-l) {
+    position: absolute;
+    top: $space-xxl;
+    left: 0;
+    width: 100%;
+    padding: $space-m;
+    flex-direction: column;
+    gap: $space-m;
+    background: $light-principal;
+    display: none;
+
+    &.open {
+      display: flex;
+    }
+
+    a {
+      padding-left: $space-s;
+      color: $black;
+      font-weight: $bold;
+    }
+  }
+}
+
+.buttonMenu,
+.buttonBack {
+  background: transparent;
+  border: none;
+  display: none;
+
+  @media (max-width: $breakpoint-l) {
+    display: block;
+  }
+}
+
+.buttonBack {
+  @media (max-width: $breakpoint-l) {
+    margin-top: $space-2xl;
+  }
+
+  >img {
+    @media (max-width:$breakpoint-m) {
+      width: 80px;
+    }
+  }
+}
+
+.iconButton {
+  color: $light-secondary;
+  vertical-align: middle;
+
+  @media (max-width:$breakpoint-s) {
+    width: 18px;
+  }
+}

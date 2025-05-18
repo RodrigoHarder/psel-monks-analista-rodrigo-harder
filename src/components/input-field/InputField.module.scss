@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.container{
+    display:flex;
+    flex-direction:column;
+}
+
+.input{
+    background-color: $white;
+    border:none;
+    border-radius:$radius-s;
+    font-size: $size-s;
+    padding:$space-xs;
+    width:100%;
+    color:$black;
+}
+
+.error{
+    font-size:$size-s;
+    color:$black;
+
+}

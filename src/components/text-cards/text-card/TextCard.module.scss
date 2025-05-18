@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+    width: 375px;
+    border-radius: $radius-m;
+    background-color: $white;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.05);
+    padding: $space-m;
+
+    @media (max-width:$breakpoint-m) {
+        width: 100%
+    }
+
+    >h3 {
+        font-size: $size-m;
+        font-weight: $bold;
+    }
+}
+
+.button {
+    padding: $space-xs $space-xl;
+    background-color: $light-principal;
+    border-radius: $radius-xs;
+    align-self: center;
+    font-size: $size-xs;
+    font-weight: $bold;
+    color: $black;
+    margin-top: $space-m;
+}

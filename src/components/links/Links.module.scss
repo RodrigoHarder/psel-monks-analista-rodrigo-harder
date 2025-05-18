@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $space-xl 0;
+  gap: $space-xs;
+
+  >h3 {
+    font-size: $size-s;
+    font-weight: $bold;
+    color: $white;
+  }
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: $space-l;
+}
+
+.link {
+  font-size: $size-s;
+  font-weight: $light;
+
+  @media (max-width:$breakpoint-m){
+    font-size: $size-xs;
+  }
+}

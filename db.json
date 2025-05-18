@@ -1,0 +1,221 @@
+{
+  "header": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra",
+    "buttonScroll": "/header/scroll.svg",
+    "pattern": "/header/pattern.svg"
+  },
+  "menu": {
+    "logo": "/menu/logo.svg",
+    "buttonBack": "/menu/back.svg",
+    "category": [
+      {
+        "id": 1,
+        "name": "Categoria 1"
+      },
+      {
+        "id": 2,
+        "name": "Categoria 2"
+      },
+      {
+        "id": 3,
+        "name": "Categoria 3"
+      },
+      {
+        "id": 4,
+        "name": "Categoria 4"
+      }
+    ]
+  },
+  "image-cards": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+    "cards": [
+      {
+        "id": 1,
+        "imagemUrl": "/card-images/card-1.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 2,
+        "imagemUrl": "/card-images/card-2.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 3,
+        "imagemUrl": "/card-images/card-3.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 4,
+        "imagemUrl": "/card-images/card-4.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      }
+    ]
+  },
+  "album": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo",
+    "imagens": [
+      {
+        "id": 1,
+        "imagemUrl": "/album/album-1.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo"
+      },
+      {
+        "id": 2,
+        "imagemUrl": "/album/album-2.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo"
+      },
+      {
+        "id": 3,
+        "imagemUrl": "/album/album-3.png",
+        "alt": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo"
+      }
+    ]
+  },
+  "promo-app": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo"
+  },
+  "tags": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "tagNames": [
+      {
+        "id": 1,
+        "tagName": "Perfumaria"
+      },
+      {
+        "id": 2,
+        "tagName": "Corpo e banho"
+      },
+      {
+        "id": 3,
+        "tagName": "Hidratante"
+      },
+      {
+        "id": 4,
+        "tagName": "Desodorante"
+      },
+      {
+        "id": 5,
+        "tagName": "Cabelos"
+      },
+      {
+        "id": 6,
+        "tagName": "Maquiagem"
+      },
+      {
+        "id": 7,
+        "tagName": "Rosto"
+      },
+      {
+        "id": 8,
+        "tagName": "Casa"
+      },
+      {
+        "id": 9,
+        "tagName": "Infantil"
+      },
+      {
+        "id": 10,
+        "tagName": "Shampoo"
+      },
+      {
+        "id": 11,
+        "tagName": "Sabonete"
+      },
+      {
+        "id": 12,
+        "tagName": "Body splash"
+      },
+      {
+        "id": 13,
+        "tagName": "Óleo corporal"
+      },
+      {
+        "id": 14,
+        "tagName": "Corretivo"
+      },
+      {
+        "id": 15,
+        "tagName": "Proteção solar"
+      }
+    ]
+  },
+  "text-cards": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra."
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra."
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo aenean viverra."
+    }
+  ],
+  "form": {
+    "title": "Lorem ipsum dolor sit amet consectetur",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque",
+    "info": "*Lorem ipsum dolor sit amet consectetur",
+    "image": "/form/form-image.svg"
+  },
+  "fields": [
+    {
+      "name": "nome",
+      "placeholder": "Nome completo",
+      "type": "text"
+    },
+    {
+      "name": "email",
+      "placeholder": "Email",
+      "type": "text"
+    },
+    {
+      "name": "idade",
+      "placeholder": "Idade",
+      "type": "number"
+    },
+    {
+      "name": "cidade",
+      "placeholder": "Cidade",
+      "type": "text"
+    }
+  ],
+  "links-footer": {
+    "title": "Lorem ipsum dolor sit amet",
+    "links": [
+      {
+        "id": 1,
+        "name": "Lorem ipsum"
+      },
+      {
+        "id": 2,
+        "name": "Lorem ipsum"
+      },
+      {
+        "id": 3,
+        "name": "Lorem ipsum"
+      },
+      {
+        "id": 4,
+        "name": "Lorem ipsum"
+      }
+    ]
+  },
+  "users": []
+}

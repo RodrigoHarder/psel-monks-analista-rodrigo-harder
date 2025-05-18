@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.container{
+    padding:$space-xs $space-xl;
+    border:1px solid $medium-principal;
+    border-radius:$radius-l;
+    background-color: $dark-secondary;
+
+    @media (max-width:$breakpoint-l){
+        padding:$space-s;
+    }
+
+    >span{
+        font-size:$size-s;
+        font-weight: $bold;
+        color:$medium-principal;
+    }
+}

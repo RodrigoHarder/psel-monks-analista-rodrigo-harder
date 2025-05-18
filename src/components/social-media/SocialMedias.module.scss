@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.socialMedias{
+    color:$white;
+    display:flex;
+    justify-content: center;
+    gap:$space-xl;
+}

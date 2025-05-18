@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.container {
+    >h1 {
+        color: $light-secondary;
+    }
+
+    .bottomLine {
+        border-bottom: 1px solid $medium-principal;
+        margin-bottom: $space-xl;
+
+        @media(max-width:$breakpoint-m) {
+            margin-bottom: $space-m;
+        }
+    }
+}

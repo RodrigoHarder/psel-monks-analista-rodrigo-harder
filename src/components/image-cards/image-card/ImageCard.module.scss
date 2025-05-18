@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+    width: 283.5px;
+    border-radius: $radius-s;
+    background-color: $light-secondary;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.05);
+    padding: $space-xs;
+
+    >img{
+        width:271.5px;
+        height:180px;
+        border-radius:$radius-s;
+    }
+
+    @media (max-width:$breakpoint-l){
+        width:auto;
+    }
+
+    >h3,
+    >p {
+        margin-left: $space-xs;
+    }
+
+    >h3{
+        font-weight: $bold;
+    }
+}
