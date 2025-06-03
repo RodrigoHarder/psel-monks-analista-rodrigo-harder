@@ -4,15 +4,15 @@ import { TextCard } from "./text-card";
 
 export function TextCards() {
 
-    const {textCards} = useTextCards();
-    
+    const { textCards } = useTextCards();
+
     return (
         <div className={styles.container}>
-            {textCards.map((textCard) => (
+            {textCards.items?.map((item) => (
                 <TextCard
-                    key={textCard.id}
-                    title={textCard.title}
-                    description={textCard.description}
+                    key={item.id}
+                    title={item.title}
+                    description={item.description}
                 />
             ))}
         </div>

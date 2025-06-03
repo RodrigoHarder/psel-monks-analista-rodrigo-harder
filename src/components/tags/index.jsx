@@ -12,8 +12,8 @@ export function Tags() {
         <div className={styles.container}>
             <h2>{tags.title}</h2>
             <div className={styles.tags}>
-                {tags.tagNames.map((tag) => (
-                    <Tag key={tag.id} tagName={tag.tagName} />
+                {tags.items.map((item) => (
+                    <Tag key={item.id} tagName={item.name} />
                 ))}
             </div>
         </div>

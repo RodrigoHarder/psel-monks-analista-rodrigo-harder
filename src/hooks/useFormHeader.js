@@ -2,18 +2,26 @@ import { useEffect, useState } from "react";
 import { fetchFormHeader } from "../services/formService";
 
 export function useFormHeader() {
-  const [formHeader, setFormHeader] = useState({ title: "", subtitle: "", info: "", image:"" });
+  const [formData, setFormData] = useState({ 
+    header: {},
+    fields: [],
+    form: {}
+  });
 
   useEffect(() => {
     (async () => {
       try {
         const data = await fetchFormHeader();
-        setFormHeader(data);
+        setFormData({
+          header: data.header,
+          fields: data.fields,
+          form: data.form
+        });
       } catch (error) {
-        console.error("Erro ao carregar o cabeçalho do formulário.");
+        console.error("Erro ao carregar dados do formulário:", error);
       }
     })();
   }, []);
 
-  return formHeader;
+  return formData;
 }

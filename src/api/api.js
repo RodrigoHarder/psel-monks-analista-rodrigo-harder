@@ -1,0 +1,1 @@
+export const API_URL = "http://backend.local/wp-json/json_bloco/v1/conteudo"

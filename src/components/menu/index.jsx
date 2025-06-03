@@ -21,7 +21,7 @@ export function Menu() {
                 <FiMenu size={32} className={styles.iconButton} />
             </Button>
             <nav className={`${styles.lista} ${open ? styles.open : ""}`}>
-                {menu.category.map((category) => (
+                {menu.categories.map((category) => (
                     <a href="#" key={category.id}>{category.name}</a>
                 ))}
                 <Button onClick={() => setOpen(false)} className={styles.buttonBack}>
