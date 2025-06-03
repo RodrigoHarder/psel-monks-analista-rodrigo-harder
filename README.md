@@ -35,16 +35,13 @@ Um exemplo pode ser um página sobre um pet shop, que pode ser acessado [neste r
    npm install
    ```
 
-4. Inicialize o ambiente de desenvolvimento com o comando `npm run start`. Caso queira, pode usar separadamente os comandos abaixo:
-
-* **Frontend:** `npm run dev`
-* **Backend:** `json-server --watch db.json --port 3000`
+4. Inicialize o ambiente de desenvolvimento com o comando `npm run dev`
 
 ## Tecnologias aplicadas
 
- - **[React.js](https://react.dev/):** biblioteca usada para a estrutura do projeto.
+- **[React.js](https://react.dev/):** biblioteca usada para a estrutura do projeto.
 - **[SCSS](https://sass-lang.com/)**: usado para criação de variáveis e aplicação dos estilos através dos componentes.
-- **[Json-Server](https://www.npmjs.com/package/json-server):** usado para simular um backend com todas as informações necessárias (textos, links e imagens);
+- **Tema do Wordpress:** utilizei um tema do Wordpress como backend para armazenar as imagens e textos. Caso queira você pode acessar [neste repositório](https://github.com/RodrigoHarder/backend-psel-monks-analista-rodrigo-harder.git).
 
 ## Conceitos e metodologias aplicadas
 
