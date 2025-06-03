@@ -1,9 +1,23 @@
-const BASE_URL = "http://localhost:3000";
+import { API_URL } from "../api/api";
+
+const BASE_URL = "http://backend.local/wp-json/json_bloco/v1";
 
 export async function fetchFormHeader() {
-  const response = await fetch(`${BASE_URL}/form`);
-  if (!response.ok) throw new Error("Erro ao buscar o cabeçalho do formulário");
-  return await response.json();
+  const response = await fetch(API_URL);
+  if (!response.ok) throw new Error("Erro ao buscar dados do formulário");
+  
+  const data = await response.json();
+  
+  return {
+    header: data.header,
+    fields: data.fields,
+    form: {
+      title: data.form.title,
+      subtitle: data.form.subtitle,
+      info: data.form.info,
+      image: data.form.image
+    }
+  };
 }
 
 export async function saveUser(data) {
@@ -13,5 +27,10 @@ export async function saveUser(data) {
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) throw new Error("Erro ao salvar usuário");
+  if (!response.ok) {
+    const errorResponse = await response.json();
+    throw new Error(
+      errorResponse.message || "Erro desconhecido ao salvar usuário"
+    );
+  }
 }

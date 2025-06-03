@@ -22,15 +22,20 @@ export function useFormSubmit(number1, number2) {
       return;
     }
 
-    const { resposta: _, ...dadosParaSalvar } = data;
+    const dadosParaSalvar = {
+      nome: data.field_1 || '',
+      email: data.field_2 || '',
+      idade: data.field_3 ? parseInt(data.field_3) : null,
+      cidade: data.field_4 || ''
+    };
 
     try {
       await saveUser(dadosParaSalvar);
       alert("Usuário salvo com sucesso!");
       reset();
     } catch (error) {
-      console.error(error);
-      alert("Erro ao salvar usuário.");
+      console.error("Erro detalhado:", error);
+      alert(error.message || "Erro ao salvar usuário");
     }
   };
 

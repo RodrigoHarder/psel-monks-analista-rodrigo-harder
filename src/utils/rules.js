@@ -1,24 +1,20 @@
 export const rules = {
-  nome: {
+  field_1: { 
     required: "Nome é obrigatório",
-    validate: (value) =>
-      value.trim().split(" ").length >= 2 || "Digite o nome completo",
+    minLength: { value: 3, message: "Mínimo de 3 caracteres" } 
   },
-  email: {
+  field_2: { 
     required: "Email é obrigatório",
-    pattern: {
-      value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-      message: "Formato de email inválido",
-    },
+    pattern: { 
+      value: /^\S+@\S+$/i, 
+      message: "Email inválido" 
+    }
   },
-  idade: {
+  field_3: { 
     required: "Idade é obrigatória",
-    min: {
-      value: 18,
-      message: "Você deve ter pelo menos 18 anos",
-    },
+    min: { value: 18, message: "Idade mínima 18 anos" } 
   },
-  cidade: {
-    required: "Cidade é obrigatória",
-  },
+  field_4: { 
+    required: "Cidade é obrigatória" 
+  }
 };
